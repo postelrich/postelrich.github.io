@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-Posts: {{ site.posts.size }}
+
 <div class="posts">
   {% for post in paginator.posts %}
   {% assign post_url = post.url | append: '/' | replace: '//', '/' | prepend: site.baseurl | prepend: site.url | %}
